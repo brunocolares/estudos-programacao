@@ -12,6 +12,8 @@ public class Program {
 		try {
 			sc = new Scanner(file);
 			while(sc.hasNextLine()) {
+				// O next() também poderia ser usado, mas
+				// esse método utiliza espaços como delimitador padrão, quebrando o texto.
 				System.out.println(sc.nextLine());
 			}
 		} catch (IOException e) {
