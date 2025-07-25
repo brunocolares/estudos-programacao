@@ -16,13 +16,9 @@ import entities.Acesso;
 
 public class Program {
 	public static void main(String[] args) {
-		FileReader fr = null;
-		BufferedReader br = null;
-		List<Acesso> acessosList = new ArrayList<>();
-		try {
-			fr = new FileReader("C:\\temp\\acessos.txt");
-			br = new BufferedReader(fr);
 
+		List<Acesso> acessosList = new ArrayList<>();
+		try (BufferedReader br = new BufferedReader(new FileReader("C:\\temp\\acessos.txt"))){
 			String linha;
 			while((linha = br.readLine()) != null) {
 				String[] linhaSplit = linha.split(";");
