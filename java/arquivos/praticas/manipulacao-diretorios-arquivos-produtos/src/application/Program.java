@@ -39,7 +39,6 @@ public class Program {
 						}
 						System.out.println("Valores totais gerados em: "+fileSummary.getPath());
 					} 
-					
 				}
 			}
 			
