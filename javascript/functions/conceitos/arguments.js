@@ -7,3 +7,8 @@ function soma(num1, num2) {
 }
 
 console.log(soma("1", 1))
+
+function teste() {
+    return arguments
+}
+console.log(teste("bruno", 21))
