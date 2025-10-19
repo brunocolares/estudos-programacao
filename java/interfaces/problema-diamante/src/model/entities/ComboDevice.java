@@ -4,6 +4,7 @@ public class ComboDevice extends AbstractDevice implements IPrinter, IScanner{
 	
 	public ComboDevice(String serialNumber) {
 		super(serialNumber);
+		// TODO Auto-generated constructor stub
 	}
 	
 	@Override
