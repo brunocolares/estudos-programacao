@@ -1,9 +1,14 @@
 package model.entities;
 
-public class Pessoa {
+public abstract class Pessoa {
 	
 	private String nome;
 	private String endereco;
+	
+	public Pessoa(String nome, String endereco) {
+		this.nome = nome;
+		this.endereco = endereco;
+	}
 	
 	public String getNome() {
 		return nome;
@@ -17,6 +22,10 @@ public class Pessoa {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Pessoa [nome=" + nome + ", endereco=" + endereco + "]";
+	}
 	
 }
